@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-margin-top: calc(2*var(--h-header));
 }
 li{
   list-style: none;
@@ -67,7 +68,7 @@ nav ul{
 
 }
 ul a{
-  background-color: white;
+  background-color: transparent;
   padding: 0.1rem 0.3rem;
   border-radius: 0.4rem;
   font-family: 'Rye', cursive;
@@ -170,7 +171,8 @@ animation: rotar 3s ease infinite;
 }
 
 .link-activ{
-  background-color: blue;
+  background-color:gray;
+  color: white;
 }
 .icon-menu{
   display: none;

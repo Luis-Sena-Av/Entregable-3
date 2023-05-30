@@ -77,6 +77,9 @@ ul a{
   align-items: center;
 
 }
+ul a:hover{
+  color: white;
+}
 
 ul li{
   cursor: pointer;

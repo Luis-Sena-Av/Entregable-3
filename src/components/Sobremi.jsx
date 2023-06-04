@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Sobremi = () => {
 
-
+  
   return (
     <div className='sec2'>
         <div  className='sobremi hidden' id="sobremi">

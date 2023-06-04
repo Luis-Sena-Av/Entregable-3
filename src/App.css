@@ -9,19 +9,21 @@ li{
 }
 :root{
   --h-header:70px;
-  --color-header:rgb(87, 32, 87);
-  --color-name: darkblue;
+  --color-name: blue;
 }
 body{
-  background-color: rgba(0,0,0,0.2);
+  background-color: white;
   color: black;
+  --color-header:gray;
   overflow-x: hidden;
+  --color-activ:white;
 }
 body.dark{
-  --color-header:rgb(4, 4, 31);
+  --color-header:#181823;
   background-color: black;
   color: white;
   --color-name: yellow;
+  --color-activ:gray;
 }
 header{
   width: 100%;
@@ -35,6 +37,7 @@ header{
   justify-content: space-between;
   padding: 2rem;
   z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .logo{
   display: grid;
@@ -50,14 +53,14 @@ header{
   grid-column: 2/3;
   grid-row: 1/2;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: var(--color-imglogo);
 }
 .img_logo{
   border-radius: 10%;
   padding: 10px;
 }
 .nombre{
-
+  color: var(--color-name);
   font-size: 1.8rem;
   font-family: 'El Messiri', sans-serif;
   
@@ -71,7 +74,7 @@ ul a{
   background-color: transparent;
   padding: 0.1rem 0.3rem;
   border-radius: 0.4rem;
-  font-family: 'Rye', cursive;
+  font-family: 'El Messiri', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +86,9 @@ ul a:hover{
 
 ul li{
   cursor: pointer;
+}
+nav ul li{
+  color: var(--color-name);
 }
 .bxs-moon{
   font-size: 2rem;
@@ -174,7 +180,7 @@ animation: rotar 3s ease infinite;
 }
 
 .link-activ{
-  background-color:gray;
+  background-color:var(--color-activ);
   color: white;
 }
 .icon-menu{
@@ -195,6 +201,41 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
 }
+
+footer{
+  background-color:#181823;
+  width: 100%;
+  min-height: 150px;
+  padding: 2rem;
+  position: relative;
+  color: white;
+  font-family: 'El Messiri', sans-serif;
+}
+.redes{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.nav{
+  position: absolute;
+  right: 20%;
+  top: 2rem;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.nav ul a{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 
 @media(max-width:790px){
   nav{

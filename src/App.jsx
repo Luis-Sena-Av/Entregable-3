@@ -3,7 +3,7 @@ import './App.css'
 import { Header } from './components/Header'
 import { Inicio } from './components/Inicio'
 import { Sobremi } from './components/Sobremi'
-import { Footer } from './components/footer'
+import { Foooter } from './components/Foooter'
 
 function App() {
   
@@ -84,7 +84,7 @@ function App() {
       <Inicio/>
       <Sobremi/>
       <i className='bx bx-menu icon-menu'></i>
-      <Footer/>
+      <Foooter/>
     </>
   )
 }

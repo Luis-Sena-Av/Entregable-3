@@ -23,6 +23,8 @@ function App() {
     seticonmenu(iconmenu)
 
   },[])
+
+  console.log(visible)
   
   let observer = new IntersectionObserver(entry=>{
     if (entry[0].isIntersecting) {

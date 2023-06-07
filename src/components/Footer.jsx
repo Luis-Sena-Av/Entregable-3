@@ -5,9 +5,9 @@ export const Footer = () => {
 
 
   return (
-    <footer>
-
-            <div className='nav'>
+    <>
+      <footer>
+      <div className='nav'>
             <ul>
                 <a href="#inicio">
                   <li>Inicio</li>
@@ -34,6 +34,8 @@ export const Footer = () => {
             </div>
         </div>
         
-    </footer>
+      </footer>
+            
+    </>
   )
 }

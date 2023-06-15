@@ -1,15 +1,44 @@
 import React from 'react'
 
-export const Sobremi = () => {
+export const Sobremi = ({sectio_activ}) => {
 
   
   return (
+
+    <div className={`section2  ${sectio_activ[1].value && "mostrar_sec"}`}>
+      <h1>About me</h1>
     <div className='sec2'>
-        <div  className='sobremi hidden' id="sobremi">
-        <b>¿ Quien soy ?</b>
-        <p>Soy un hombre encantado por el conocimiento sobre las matemáticas, el desarrollo fronted  y algunos temas de la ingeniería. Nacido en el departamento de Córdoba/Colombia</p>
-        <div className='img_presen'><img src="../imagenes/luis-s.png" alt="luis-seña" /></div>
-        </div> 
+            <div  className='sobremi' id="sobremi">
+              <b>who I am?</b>
+              <p>I am a front end developer for chownow in cordoba/colombia. I have serious passion for ui effects animations and creating intuitive, dinamic user experiences.</p>
+              <div></div>
+            </div> 
+            <div className="skils">
+              <div className="item">
+                <p>Html</p>
+              <div className="skill_bar skill_bar-70"></div>
+              <span>70%</span>
+              </div>
+              <div className="item">
+                <p>Css</p>
+              <div className="skill_bar skill_bar-80"></div>
+              <span>80%</span>
+              </div>
+              <div className="item">
+                <p>Javascrip</p>
+                <div className="skill_bar skill_bar-75"></div>
+                <span>75%</span>
+              </div>
+              <div className="item">
+                <p>React</p>
+                <div className="skill_bar skill_bar-60"></div>
+                <span>60%</span>
+              </div>
+              
+            </div>
+        </div>
+
     </div>
+    
   )
 }

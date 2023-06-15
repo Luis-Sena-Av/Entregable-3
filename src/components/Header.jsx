@@ -1,5 +1,5 @@
 import React from 'react'
-export const Header = ({setsectio_activ,sectio_activ}) => {
+export const Header = ({setsectio_activ,sectio_activ,menuShow,setmenuShow}) => {
    
 
     const handleClic=(e)=>{
@@ -12,16 +12,26 @@ export const Header = ({setsectio_activ,sectio_activ}) => {
       })
       setsectio_activ(s)
     }
+
+    const handleMenu=()=>{
+      setmenuShow(!menuShow)
+      
+    }
+
+    const handlehome=()=>{
+      setsectio_activ([{id:1,value:true},{id:2,value:false},{id:3,value:false},{id:4,value:false}])
+      console.log("first")
+    }
    
     return (
         <>
           <header>
             
-            <a className='logo'><div className='nombre'>Luis Seña Áv.</div> <div className='img_logo'><img src="../imagenes/Yo1.png" alt="mi-logo" /></div> </a>
+            <a onClick={handlehome} className='logo'><div className='nombre'>Luis Seña Áv.</div> <div className='img_logo'><img src="../imagenes/Yo1.png" alt="mi-logo" /></div> </a>
             
             <div className='conten-nav'>
 
-              <nav className='navega'>
+              <nav className={`navega ${menuShow&&'mostrar_menu'}`}>
                 <ul onClick={handleClic}>                
                   <li id='1' className={sectio_activ[0].value && "color-activ"} >Home</li>
                   <li id='2' className={sectio_activ[1].value && "color-activ"} >About</li>
@@ -36,7 +46,7 @@ export const Header = ({setsectio_activ,sectio_activ}) => {
               </div>
               </nav>
 
-              <i className='bx bx-menu'></i>
+              <i onClick={handleMenu} className={`bx bx-menu ${menuShow&&'bx-x'}`}></i>
 
 
             </div>

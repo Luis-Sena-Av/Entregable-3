@@ -9,11 +9,11 @@ import { Contac } from './components/Contac'
 
 function App() {
   const [sectio_activ, setsectio_activ] = useState([{id:1,value:true},{id:2,value:false},{id:3,value:false},{id:4,value:false}])
- 
-  
+ const [menuShow, setmenuShow] = useState(false)
+  useEffect(()=>{console.log(menuShow)},[menuShow])
   return (
     <div className='contendor'>
-      <Header setsectio_activ={setsectio_activ} sectio_activ={sectio_activ}/>
+      <Header setmenuShow={setmenuShow} menuShow={menuShow} setsectio_activ={setsectio_activ} sectio_activ={sectio_activ}/>
       <Inicio sectio_activ={sectio_activ}/>
       <Sobremi sectio_activ={sectio_activ}/>
       <Portafolio sectio_activ={sectio_activ}/>

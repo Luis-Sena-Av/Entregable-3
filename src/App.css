@@ -19,7 +19,9 @@ body{
   color: white;
   --color-name: yellow;
   --color-activ:gray;
+  height: 100vh;
 }
+
 header{
   width: 100%;
   height:var(--h-header) ;
@@ -109,6 +111,7 @@ nav ul li{
   color: white;
   transition: left 1s ease;
   opacity: 0;
+  background-color: #181823;
 }
 .img_inicio img{
   display: block;
@@ -129,8 +132,8 @@ nav ul li{
   grid-column: 1/2;
   grid-row: 1/2;
   background-color: green;
- margin: 0 0 0 1.5rem;
- border-radius: 5px;
+  margin: 0 0 0 1.5rem;
+  border-radius: 5px;
 }
 .sobremi{
  font-size: 1.5rem;
@@ -138,7 +141,7 @@ nav ul li{
 .section2{
   position: absolute;
   height: calc(80vh - var(--h-header)) ;
-  width: 100vw;
+  width: 100%;
   top:var(--h-header) ;
   left: -100%;
   display: flex;
@@ -148,6 +151,7 @@ nav ul li{
   gap: 2.5rem;
   transition: left 1s ease;
   opacity: 0;
+  background-color: #181823;
 }
 .sec2{
   display: grid;
@@ -164,8 +168,8 @@ nav ul li{
 .contact{
   position: absolute;
   height: calc(80vh - var(--h-header)) ;
-  width: 100vw;
-  top:var(--h-header) ;
+  width: 100%;
+  top:calc(2*var(--h-header))  ;
   left: -100%;
   display: flex;
   flex-direction: column;
@@ -174,6 +178,7 @@ nav ul li{
   gap: 2.5rem;
   transition: left 1s ease;
   opacity: 0;
+  background-color: #181823;
 }
 .form{
   display: flex;
@@ -254,6 +259,7 @@ input:focus{
   gap: 2rem;
   transition: left 1s ease;
   opacity: 0;
+  background-color: #181823;
 }
 .mostrar_sec{
   left: 0;
@@ -450,33 +456,56 @@ footer{
  
 
   .inicio{
-    width: 100%;
-    height: calc(100% + var(--h-header));
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    overflow: hidden;
+    width: 100vw;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    top: calc(2*var(--h-header));
+    align-items: center;
+    justify-content: center;
   }
 
-.img_inicio{
-  grid-column: 1/2;
-  grid-row: 2/3;
-  display: flex;
-  justify-content: end;
-}
 .img_inicio img{
-  display: block;
-  height: 100%;
+ width: 80%;
+ margin: 0 auto;
 
+}
+.section2{
+  height: 100%;
 }
   
   .sec2{
+    height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+  .portafolio{
+    height: 100vh;
   }
   .bx-menu{
     display: block;
     font-size: 1.5rem;
+  }
+.contact{
+  height: 100vh;
+}
+}
+@media(max-width:507px){
+  .navega{
+    flex-direction: column;
+    justify-content: center;
+    
+    
+  }
+  .navega ul{
+    padding: 0;
+  }
+  .icons_header{
+    font-size: 1.3rem;
+    gap: 1rem;
+  }
+  .nombre{
+    font-size: 1.3rem;
   }
 
 }

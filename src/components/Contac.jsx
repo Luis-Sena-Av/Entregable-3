@@ -11,7 +11,7 @@ export const Contac = ({sectio_activ}) => {
             <input type="text" placeholder="ingresa tu nombre" name="name" id="nameUser" required />
             <input type="email" placeholder="ingresa tu correo" name="email" id="emailUser" required/>
             <textarea name="comenUser" id="comenuser" cols="30" rows="10" placeholder="Escribeme"></textarea>
-            <button type="submit" class="btn">Enviar</button>
+            <button type="submit" className="btn">Enviar</button>
             <input type="hidden" name="_captcha" value="false"/>
         </form>
 

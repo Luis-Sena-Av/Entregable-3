@@ -12,14 +12,14 @@ function App() {
  
   
   return (
-    <>
+    <div className='contendor'>
       <Header setsectio_activ={setsectio_activ} sectio_activ={sectio_activ}/>
       <Inicio sectio_activ={sectio_activ}/>
       <Sobremi sectio_activ={sectio_activ}/>
       <Portafolio sectio_activ={sectio_activ}/>
       <Contac sectio_activ={sectio_activ} />
       <Foooter/>
-    </>
+    </div>
   )
 }
 

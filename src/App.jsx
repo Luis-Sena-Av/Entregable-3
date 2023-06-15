@@ -12,7 +12,7 @@ function App() {
  const [menuShow, setmenuShow] = useState(false)
   useEffect(()=>{console.log(menuShow)},[menuShow])
   return (
-    <div className='contendor'>
+    <div>
       <Header setmenuShow={setmenuShow} menuShow={menuShow} setsectio_activ={setsectio_activ} sectio_activ={sectio_activ}/>
       <Inicio sectio_activ={sectio_activ}/>
       <Sobremi sectio_activ={sectio_activ}/>

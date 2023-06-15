@@ -14,25 +14,40 @@ export const Sobremi = ({sectio_activ}) => {
               <div></div>
             </div> 
             <div className="skils">
+
               <div className="item">
                 <p>Html</p>
-              <div className="skill_bar skill_bar-70"></div>
-              <span>70%</span>
+                <div className="item">
+                  <div className="skill_bar skill_bar-70"></div>
+                  <span>70%</span>
+                </div>
+                
               </div>
+
               <div className="item">
                 <p>Css</p>
-              <div className="skill_bar skill_bar-80"></div>
-              <span>80%</span>
+                <div className="item">
+                  <div className="skill_bar skill_bar-80"></div>
+                  <span>80%</span>
+                </div>
+                
               </div>
               <div className="item">
                 <p>Javascrip</p>
-                <div className="skill_bar skill_bar-75"></div>
-                <span>75%</span>
+                <div className="item">
+                  <div className="skill_bar skill_bar-75"></div>
+                  <span>75%</span>
+                </div>
+                
               </div>
+              
               <div className="item">
                 <p>React</p>
-                <div className="skill_bar skill_bar-60"></div>
-                <span>60%</span>
+                <div className="item">
+                  <div className="skill_bar skill_bar-60"></div>
+                  <span>60%</span>
+                </div>
+               
               </div>
               
             </div>

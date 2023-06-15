@@ -464,7 +464,7 @@ footer{
 
   .inicio{
     width: 100vw;
-    height:100%;
+    height: calc(100% - var(--h-header));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -472,7 +472,7 @@ footer{
   }
 
 .img_inicio img{
- width: 80%;
+ width: 60%;
  margin: 0 auto;
 
 }
@@ -482,9 +482,9 @@ footer{
 }
   
   .sec2{
-    height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: min-content;
+    gap: 1rem;
   }
   .portafolio{
     height: calc(100% - 2*var(--h-header));
@@ -502,9 +502,7 @@ footer{
 @media(max-width:507px){
   .navega{
     flex-direction: column;
-    justify-content: center;
-    
-    
+    justify-content: center;    
   }
   .navega ul{
     padding: 0;
@@ -516,5 +514,29 @@ footer{
   .nombre{
     font-size: 1.3rem;
   }
-
+  .contact h2{
+    font-size: 2rem;
+  }
 }
+
+@media(max-width:472px){
+  .section2{
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .section2 h1{
+    font-size: 2rem;
+  }
+  .section2 .item{
+  }
+  .section2 .item p{
+    font-size: 1rem;
+  
+  }
+  .skill_bar,.skill_bar::after{
+    width: 100px;
+  }
+}
+
+
+

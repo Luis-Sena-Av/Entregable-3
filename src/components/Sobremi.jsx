@@ -18,7 +18,7 @@ export const Sobremi = ({sectio_activ}) => {
               <div className="item">
                 <p>Html</p>
                 <div className="item">
-                  <div className="skill_bar skill_bar-70"></div>
+                  <div className={`${sectio_activ[2]&&'skill_bar-70'} skill_bar`}></div>
                   <span>70%</span>
                 </div>
                 

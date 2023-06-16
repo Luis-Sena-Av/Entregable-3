@@ -18,7 +18,7 @@ export const Sobremi = ({sectio_activ}) => {
               <div className="item">
                 <p>Html</p>
                 <div className="item">
-                  <div className={`${sectio_activ[2]&&'skill_bar-70'} skill_bar`}></div>
+                  <div className="skill_bar"><div className={`${sectio_activ[1].value &&"anima skill_bar-70"} skill_bar-fill`}></div></div>                  
                   <span>70%</span>
                 </div>
                 
@@ -27,7 +27,7 @@ export const Sobremi = ({sectio_activ}) => {
               <div className="item">
                 <p>Css</p>
                 <div className="item">
-                  <div className="skill_bar skill_bar-80"></div>
+                <div className="skill_bar"><div className={`${sectio_activ[1].value &&"anima skill_bar-80"} skill_bar-fill`}></div></div> 
                   <span>80%</span>
                 </div>
                 
@@ -35,7 +35,7 @@ export const Sobremi = ({sectio_activ}) => {
               <div className="item">
                 <p>Javascrip</p>
                 <div className="item">
-                  <div className="skill_bar skill_bar-75"></div>
+                <div className="skill_bar"><div className={`${sectio_activ[1].value &&"anima skill_bar-75"} skill_bar-fill`}></div></div> 
                   <span>75%</span>
                 </div>
                 
@@ -44,7 +44,7 @@ export const Sobremi = ({sectio_activ}) => {
               <div className="item">
                 <p>React</p>
                 <div className="item">
-                  <div className="skill_bar skill_bar-60"></div>
+                <div className="skill_bar"><div className={`${sectio_activ[1].value &&"anima skill_bar-60"} skill_bar-fill`}></div></div> 
                   <span>60%</span>
                 </div>
                

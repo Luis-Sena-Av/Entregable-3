@@ -606,7 +606,7 @@ footer{
     font-size: 1rem;
   
   }
-  .skill_bar,.skill_bar::after{
+  .skill_bar,.skill_bar-fill{
     width: 100px;
   }
 }

@@ -39,10 +39,10 @@ export const Header = ({setsectio_activ,sectio_activ,menuShow,setmenuShow}) => {
                   <li id='4' className={sectio_activ[3].value && "color-activ"} >Contac</li>
                 </ul>
                 <div className='icons_header'>
-                <a href="#"><i className='bx bxl-facebook'></i></a>
-                <a href="#"><i className='bx bxl-instagram'></i></a>
-                <a href=""><i className='bx bxl-github'></i></a>
-                <a href=""><i className='bx bxl-linkedin'></i></a>
+                <a ><i className='bx bxl-facebook'></i></a>
+                <a ><i className='bx bxl-instagram'></i></a>
+                <a ><i className='bx bxl-github'></i></a>
+                <a target='blank_' href="https://www.linkedin.com/in/luis-se%C3%B1a-%C3%A1vila-07923a278/"><i className='bx bxl-linkedin'></i></a>
               </div>
               </nav>
 

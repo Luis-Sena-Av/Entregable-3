@@ -91,6 +91,8 @@ nav ul li{
 }
 .color-activ{
   color: white;
+  text-decoration: underline  #01F701;
+  text-decoration-thickness: 3px
 }
 
 
@@ -240,6 +242,14 @@ input:focus{
   animation: visible 1.4s ease forwards;
   transition: opacity 0.5s;
 }
+
+.skils{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
 .bx-menu{
   display: none;
   cursor: pointer;
@@ -290,12 +300,14 @@ input:focus{
  background-color:black;
  grid-column: 1/2;
  font-size: 4rem;
-
+ cursor: pointer;
 }
+
 .control_right{
  background-color:black;
  grid-column: 3/4;
  font-size: 4rem;
+ cursor: pointer;
 }
 
 .carrusel{
@@ -402,6 +414,7 @@ border-radius: 2rem;
 .item{
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -496,6 +509,14 @@ footer{
   align-items: flex-start;
 }
 
+.icons{
+  display: flex;
+  gap: 1.3rem;
+}
+
+a{
+  cursor: pointer;
+}
 
 @media(max-width:760px){
   
@@ -508,8 +529,9 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.7rem;
     padding: 1rem;
-    background-color: red;
+    background-color:black;
     opacity: 0;
     transition: top 0.3s ease;
   }
@@ -533,6 +555,7 @@ footer{
   footer{
     display: none;
   }
+
  
 
   .inicio{
@@ -600,8 +623,7 @@ footer{
   .section2 h1{
     font-size: 2rem;
   }
-  .section2 .item{
-  }
+ 
   .section2 .item p{
     font-size: 1rem;
   
@@ -761,4 +783,11 @@ border-radius: 0rem;
   .project_img img{
     display: none;}
 
+}
+
+.item_skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }

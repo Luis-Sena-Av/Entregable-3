@@ -156,6 +156,12 @@ nav ul li{
   opacity: 0;
   background-color: #181823;
 }
+.titleCon{
+  text-shadow: 2px 2px 5px #01F701;
+}
+.section2 h1{
+  text-shadow: 2px 2px 5px #01F701;
+}
 .sec2{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -261,6 +267,10 @@ top: 0;
 left: 0;
 animation: maquina 4s ease infinite;
 background-color: #181823;
+}
+
+.portafolio h1{
+  text-shadow: 2px 2px 5px #01F701;
 }
 
 
@@ -615,6 +625,7 @@ a{
     display: block;
     font-size: 1.5rem;
   }
+
 .contact{
  height: calc(100% - 2*var(--h-header));
  top:calc(2*var(--h-header))  ;
@@ -647,7 +658,13 @@ a{
   }
   .section2 h1{
     font-size: 2rem;
+    
   }
+
+  .portafolio h1{
+    font-size: 2rem;
+  }
+  
  
   .section2 .item p{
     font-size: 1rem;

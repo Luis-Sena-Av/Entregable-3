@@ -10,7 +10,7 @@ export const Sobremi = ({sectio_activ}) => {
     <div className='sec2'>
             <div  className='sobremi' id="sobremi">
               <b>who I am?</b>
-              <p>I am a front end developer for chownow in cordoba/colombia. I have serious passion for ui effects animations and creating intuitive, dinamic user experiences.</p>
+              <p className='text_sobremi'>I am a front end developer for chownow in cordoba/colombia. I have serious passion for ui effects animations and creating intuitive, dinamic user experiences.  </p>
               <div></div>
             </div> 
             <div className="skils">
